@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AdactionAutomation</td>
+      <td>29 Jul 2021, 17:35</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">OrderProducts.getting_the_price_of_all_Product_and_removing_the_dollar_symbol()</td>
+              <td>1</td>
+              <td class="duration" data-value="531902000">0.531</td>
+              <td class="duration" data-value="531902000">0.531</td>
+              <td class="duration" data-value="531902000">0.531</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.should_get_all_the_product_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="1136504500">1.136</td>
+              <td class="duration" data-value="1136504500">1.136</td>
+              <td class="duration" data-value="1136504500">1.136</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.user_is_on_SauceDemo_Login_Page()</td>
+              <td>4</td>
+              <td class="duration" data-value="11366373475">11.366</td>
+              <td class="duration" data-value="11366373475">30.868</td>
+              <td class="duration" data-value="45465493900">45.465</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.user_should_add_Product_to_the_Cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="639085500">0.639</td>
+              <td class="duration" data-value="639085500">0.639</td>
+              <td class="duration" data-value="639085500">0.639</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.user_should_checkout_and_enter_and(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1700962100">1.700</td>
+              <td class="duration" data-value="1700962100">1.700</td>
+              <td class="duration" data-value="1700962100">1.700</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.user_should_enter_and(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1340763500">1.340</td>
+              <td class="duration" data-value="1340763500">2.812</td>
+              <td class="duration" data-value="4022290500">4.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.user_should_enter_invalid_and(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="547227000">0.547</td>
+              <td class="duration" data-value="547227000">0.547</td>
+              <td class="duration" data-value="547227000">0.547</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.validate_the_error_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="960091200">0.960</td>
+              <td class="duration" data-value="960091200">0.960</td>
+              <td class="duration" data-value="960091200">0.960</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.validate_the_price_with_product_listing_with_product_individual_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1723417000">1.723</td>
+              <td class="duration" data-value="1723417000">1.723</td>
+              <td class="duration" data-value="1723417000">1.723</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.validate_whether_Sauce_Labs_Bolt_T_Shirt_product_is_available()</td>
+              <td>1</td>
+              <td class="duration" data-value="1472334200">1.472</td>
+              <td class="duration" data-value="1472334200">1.472</td>
+              <td class="duration" data-value="1472334200">1.472</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">OrderProducts.validate_whether_ordered_the_correct_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="1258966300">1.258</td>
+              <td class="duration" data-value="1258966300">1.258</td>
+              <td class="duration" data-value="1258966300">1.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>11</td>
+            <td>16</td>
+            <td class="duration">3.716</td>
+            <td class="duration">45.465</td>
+            <td class="duration">59.458</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

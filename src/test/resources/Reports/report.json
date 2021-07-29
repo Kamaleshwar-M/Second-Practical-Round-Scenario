@@ -1,0 +1,304 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Verifying Correct Product is ordered",
+        "description": "",
+        "id": "verifying-saucedemo-details;verifying-correct-product-is-ordered;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30868564800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on SauceDemo Login Page",
+            "match": {
+              "location": "OrderProducts.user_is_on_SauceDemo_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2812710100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 38
+                }
+              ],
+              "location": "OrderProducts.user_should_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 639085500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should add Product to the Cart",
+            "match": {
+              "location": "OrderProducts.user_should_add_Product_to_the_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1700962100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should checkout and enter \"Kamaleshwar\",\"Murthy\" and \"600100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kamaleshwar\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Murthy\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"600100\"",
+                  "offset": 58
+                }
+              ],
+              "location": "OrderProducts.user_should_checkout_and_enter_and(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1258966300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validate whether ordered the correct product",
+            "match": {
+              "location": "OrderProducts.validate_whether_ordered_the_correct_product()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Verifying Particular product is available",
+        "description": "",
+        "id": "verifying-saucedemo-details;verifying-particular-product-is-available;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5917220300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on SauceDemo Login Page",
+            "match": {
+              "location": "OrderProducts.user_is_on_SauceDemo_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 530250000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should enter \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 38
+                }
+              ],
+              "location": "OrderProducts.user_should_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1136504500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Should get all the product list",
+            "match": {
+              "location": "OrderProducts.should_get_all_the_product_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1472334200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Validate whether Sauce Labs Bolt T-Shirt product is available",
+            "match": {
+              "location": "OrderProducts.validate_whether_Sauce_Labs_Bolt_T_Shirt_product_is_available()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Verifying price with product listing with product individual page",
+        "description": "",
+        "id": "verifying-saucedemo-details;verifying-price-with-product-listing-with-product-individual-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4039657200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is on SauceDemo Login Page",
+            "match": {
+              "location": "OrderProducts.user_is_on_SauceDemo_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 679330400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should enter \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 38
+                }
+              ],
+              "location": "OrderProducts.user_should_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531902000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Getting the price of all Product and removing the dollar symbol",
+            "match": {
+              "location": "OrderProducts.getting_the_price_of_all_Product_and_removing_the_dollar_symbol()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1723417000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate the price with product listing with product individual page",
+            "match": {
+              "location": "OrderProducts.validate_the_price_with_product_listing_with_product_individual_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Verifying LoginPage with invalid Credentials",
+        "description": "",
+        "id": "verifying-saucedemo-details;verifying-loginpage-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4640051600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is on SauceDemo Login Page",
+            "match": {
+              "location": "OrderProducts.user_is_on_SauceDemo_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 547227000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User should enter invalid \"standard_us1r\" and \"secret_sau7e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_us1r\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"secret_sau7e\"",
+                  "offset": 46
+                }
+              ],
+              "location": "OrderProducts.user_should_enter_invalid_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 960091200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Validate the error message",
+            "match": {
+              "location": "OrderProducts.validate_the_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Reg"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying SauceDemo Details",
+    "description": "",
+    "id": "verifying-saucedemo-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/FeatureFile/SauceDemo.feature",
+    "tags": []
+  }
+]

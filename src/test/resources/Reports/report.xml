@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="59.466561">
+<testcase classname="Verifying SauceDemo Details" name="Verifying Correct Product is ordered" time="37.28581">
+<system-out><![CDATA[Given User is on SauceDemo Login Page.......................................passed
+And User should enter "standard_user" and "secret_sauce"....................passed
+And User should add Product to the Cart.....................................passed
+And User should checkout and enter "Kamaleshwar","Murthy" and "600100"......passed
+Then Validate whether ordered the correct product...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying SauceDemo Details" name="Verifying Particular product is available" time="9.05698">
+<system-out><![CDATA[Given User is on SauceDemo Login Page.......................................passed
+And User should enter "standard_user" and "secret_sauce"....................passed
+And Should get all the product list.........................................passed
+Then Validate whether Sauce Labs Bolt T-Shirt product is available..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying SauceDemo Details" name="Verifying price with product listing with product individual page" time="6.975097">
+<system-out><![CDATA[Given User is on SauceDemo Login Page.......................................passed
+And User should enter "standard_user" and "secret_sauce"....................passed
+And Getting the price of all Product and removing the dollar symbol.........passed
+Then Validate the price with product listing with product individual page...passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying SauceDemo Details" name="Verifying LoginPage with invalid Credentials" time="6.148674">
+<system-out><![CDATA[Given User is on SauceDemo Login Page.......................................passed
+And User should enter invalid "standard_us1r" and "secret_sau7e"............passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
